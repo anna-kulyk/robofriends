@@ -1,0 +1,11 @@
+.card-body {
+    background-color: #9eebcf;
+    width: fit-content;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 8px 0 rgb(0 0 0 / 20%);
+    border-width: 0.25rem;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    line-height: 1.15;
+}
