@@ -7,9 +7,3 @@
 .logo {
   text-align: center;
 }
-
-.cards-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
