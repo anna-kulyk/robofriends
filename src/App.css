@@ -6,4 +6,9 @@
 
 .logo {
   text-align: center;
+  font-size: 3rem;
+  /* font-family: SEGA LOGO FONT; */
+  font-weight: 200;
+  color: #0ccac4;
+  margin: 0.67em 0;
 }
