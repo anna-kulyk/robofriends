@@ -1,7 +1,7 @@
 import React from 'react';
 import './SearchBox.css';
 
-const SearchBox = ({searchChange}) => {
+const SearchBox = ({onSearchChange}) => {
     return (
         <div className='searchbox__wrapper'>
             <input
@@ -9,7 +9,7 @@ const SearchBox = ({searchChange}) => {
                 type='search' 
                 placeholder='search robots' 
                 aria-label='searchbox'
-                onChange={searchChange}
+                onChange={onSearchChange}
             />
         </div>
     );

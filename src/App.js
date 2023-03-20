@@ -13,7 +13,7 @@ class App extends React.Component {
     }
   }
 
-  onSearchChange = (event) => {
+  handleSearchChange = (event) => {
     this.setState({searchfield: event.target.value.toLowerCase().trim()});
   }
 
@@ -25,7 +25,7 @@ class App extends React.Component {
     return (
       <>
         <h1 className='logo'>Robofriends</h1>
-        <SearchBox searchChange={this.onSearchChange}/>
+        <SearchBox onSearchChange={this.handleSearchChange}/>
         <CardList robots={filteredRobots}/>
       </>
     );
