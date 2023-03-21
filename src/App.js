@@ -5,12 +5,9 @@ import SearchBox from './components/SearchBox/SearchBox';
 import { robots } from './common/robots';
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      robots: robots,
-      searchfield: '',
-    }
+  state = {
+    robots: robots,
+    searchfield: '',
   }
 
   handleSearchChange = (event) => {
