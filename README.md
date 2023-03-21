@@ -5,7 +5,7 @@ Udemy project.
 
 ## [Check the live demo](https://robofriends-ztm.netlify.app/)
 
-![Screenshot](https://raw.githubusercontent.com/anna-kulyk/travellian_landing/master/src/assets/images/robofriends.jpg)
+![Screenshot](https://raw.githubusercontent.com/anna-kulyk/robofriends/master/src/assets/images/robofriends.jpg)
 
 ## Installation
 
