@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import CardList from './components/CardList/CardList';
 import SearchBox from './components/SearchBox/SearchBox';
+import { ErrorBoundary } from "react-error-boundary";
 
 class App extends React.Component {
   state = {
@@ -32,7 +33,9 @@ class App extends React.Component {
       <>
         <h1 className='logo'>Robofriends</h1>
         <SearchBox onSearchChange={this.handleSearchChange}/>
-        <CardList robots={filteredRobots}/>
+        <ErrorBoundary fallback={<h1>Something went wrong</h1>}>
+          <CardList robots={filteredRobots}/>
+        </ErrorBoundary>
       </>
     );
   }
