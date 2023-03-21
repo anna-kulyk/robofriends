@@ -41,6 +41,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 - Responsive Web Design
 - Sections designed with CSS Flexbox
 - Search bar to find the robot by its name
+- Fetch API to fetch users from {JSON} Placeholder
 
 ## Acknowledgements
 
