@@ -2,12 +2,21 @@ import './App.css';
 import React from 'react';
 import CardList from './components/CardList/CardList';
 import SearchBox from './components/SearchBox/SearchBox';
-import { robots } from './common/robots';
 
 class App extends React.Component {
   state = {
-    robots: robots,
+    robots: [],
     searchfield: '',
+  }
+
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((response) => response.json())
+      .then((data) => this.setState({robots: data}));
+  }
+
+  componentWillUnmount() {
+    this.setState({robots: []});
   }
 
   handleSearchChange = (event) => {
@@ -15,7 +24,7 @@ class App extends React.Component {
   }
 
   render() {
-    const filteredRobots = robots.filter(robot => {
+    const filteredRobots = this.state.robots.filter(robot => {
       return robot.name.toLowerCase().includes(this.state.searchfield);
     })
 
