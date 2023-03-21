@@ -9,9 +9,7 @@ Udemy project.
 
 ## Installation
 
-```bash
-npm i
-```
+### `npm i`
 
 ## Available Scripts
 
