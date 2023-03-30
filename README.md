@@ -1,7 +1,6 @@
 # Robofriends
 
 A simple react application with cute robots.
-Udemy project.
 
 ## [Check the live demo](https://robofriends-ztm.netlify.app/)
 
